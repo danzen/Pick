@@ -24,8 +24,8 @@ as long as the literal parameter of Pick.choose() is true (default)<br>
 
 1. an Array of values to pick from randomly - eg. ["red", "green", "blue"]<br>
 2. a Function that returns a value - eg. function(){return Date.now();}<br>
-   see also the Pick.series() function which returns a function that will execute a series in order<br>
-   pass series(["red", "green", "blue"]) into a parameter to select these in order then repeat, etc.<br>
+   see also the Pick.series() static method which returns a function that will execute a series in order<br>
+   pass Pick.series("red", "green", "blue") into a parameter to select these in order then repeat, etc.<br>
 3. a RAND object literal for a range - eg. {min:10, max:20, integer:true, negative:true} max is required<br>
 4. any combination of the above - eg. ["red", function(){x>100?["green", "blue"]:"yellow"}] Pick is recursive<br>
 5. a single value such as a Number, String, new Rectangle(), etc. this just passes through unchanged<br>
