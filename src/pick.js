@@ -1,4 +1,7 @@
 /*
+Pick class - (c) 2019 Dan Zen for https://zimjs.com.
+Free to use
+
 A system to pass in options as an argument
 and then pick the option inside the function.
 
