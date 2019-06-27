@@ -1,25 +1,25 @@
 # Pick
-A class to accomodate dynamic (delayed) parameters
+A class to accommodate dynamic (delayed) arguments
 
 Pick class - Dan Zen for https://zimjs.com.
 
-A system to pass in options as a parameter 
+A system to pass in options as an argument
 and then pick the option inside the function.
 
 We might have a particle emitter with variable shapes.
 If we pick the shape outside the function
-then it would emmit the chosen shape over and over.
+then it would emit the chosen shape over and over.
 Instead, we can pass in a Pick object
-and the Emitter can choose inside to emmit different particles.
+and the Emitter can choose inside to emit different particles.
 
 Pick lets you pass a range, an array of choices, a series
 or any function that returns a value as options.
-Pass in a new Pick(options) as a parameter
+Pass in a new Pick(options) as an argument
 and choose from options inside function
 using Pick.choose(parameter).
 
 Options: can pass these in to the options parameter of Pick() <br>
-OR use as a Pick literal - pass any of these in as a parameter <br>
+OR use as a Pick literal - pass any of these in as an argument <br>
 as long as the literal parameter of Pick.choose() is true (default)<br>
 
 1. an Array of values to pick from randomly - eg. ["red", "green", "blue"]<br>
@@ -44,7 +44,7 @@ function interval(time, call) {
     }
 }
 
-// every second 
+// every second
 // the Pick.choose() in the function passes numbers and strings through without change
 interval(1000, function () {console.log("calling");});
 
@@ -88,5 +88,5 @@ console.log(status=="lose"?"lose":"win");
 </pre>
 
 Pick is used extensively in ZIM at https://zimjs.com.  
-It was originally called the ZIM VEE object. 
+It was originally called the ZIM VEE object.
 This class makes it more generic - so please use!
